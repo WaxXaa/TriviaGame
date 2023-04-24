@@ -1,0 +1,16 @@
+.container {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 5px;
+}
+p {
+    color: var(--gray);
+}
+.content {
+    overflow-y:auto;
+    height: 85%;
+    padding-bottom: 45px;
+}

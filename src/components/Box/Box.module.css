@@ -1,0 +1,11 @@
+.box {
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+.text {
+    text-decoration: none;
+    font-weight:600;
+}

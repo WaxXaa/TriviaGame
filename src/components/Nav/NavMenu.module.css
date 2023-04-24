@@ -1,0 +1,29 @@
+.container {
+    width: max-content;
+    position: fixed;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.elipse {
+    position: absolute;
+    bottom: 15px;
+}
+
+.rect {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100vw;
+    height: 58px;
+    bottom: 0px;
+    background: var(---green);
+
+}
+.homeIcon {
+display: flex;
+justify-content: center;
+}
+
+

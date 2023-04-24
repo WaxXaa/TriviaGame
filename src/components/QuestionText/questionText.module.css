@@ -1,0 +1,15 @@
+.questionBox {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 15px 2px 2px 2px;
+  width: 85vw;
+  height: 165px;
+  border-radius: 10px;
+  border: 3px solid var(---blue);
+  margin: 15px 0;
+}
+.questionBox p {
+  font-size: 1.3rem;
+  text-align: center;
+}
