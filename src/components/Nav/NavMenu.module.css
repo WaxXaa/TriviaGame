@@ -8,7 +8,7 @@
 
 .elipse {
     position: absolute;
-    bottom: 15px;
+    bottom: 7px;
 }
 
 .rect {
@@ -16,7 +16,7 @@
     justify-content: center;
     position: absolute;
     width: 100vw;
-    height: 58px;
+    height: 50px;
     bottom: 0px;
     background: var(---green);
 
@@ -24,6 +24,7 @@
 .homeIcon {
 display: flex;
 justify-content: center;
+align-items: center;
 }
 
 
