@@ -4,6 +4,8 @@ import { Box } from '@mui/material'
 import Styles from './Results.module.css'
 import { useNavigate } from 'react-router-dom'
 import { score } from '../components/CheckRes/CheckRes'
+// eslint-disable-next-line no-undef
+const completed = new Audio('../assets/completed.wav')
 export function Results () {
   console.log(score.value)
   const navigate = useNavigate()
@@ -49,6 +51,7 @@ export function Results () {
                 bottom: 5
               }
               } onClick={goHome} ><Title text={'Finish'} color={'var(---white)'}/></Box>
+              {completed.play()}
           </div>
         </>
   )
