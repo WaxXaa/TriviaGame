@@ -1,5 +1,8 @@
 /* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
+import correct from '../../assets/correct.wav'
+import wrong from '../../assets/wrong.mp3'
+
 import Styles from './CheckRes.module.css'
 import { NextButton } from '../NextButton/NextButton'
 import { Link } from 'react-router-dom'
@@ -7,8 +10,8 @@ import { Title } from '../Title/Title'
 import { signal } from '@preact/signals-react'
 export const score = signal(0)
 
-const correct = new Audio('../../assets/correct.wav')
-const wrong = new Audio('../../assets/wrong.mp3')
+const correctS = new Audio(correct)
+const wrongS = new Audio(wrong)
 export function CheckRes (
   {
     correctAns,
@@ -23,15 +26,14 @@ export function CheckRes (
 ) {
   const isCorrect = isChoise === correctAns
   function sound () {
-    if (isCorrect) { correct.play() } else {
-      wrong.play()
+    console.log('sound')
+    if (isCorrect) { correctS.play() } else {
+      wrongS.play()
     }
   }
   console.log('signal')
   const Ttext = isCorrect ? 'Correct' : 'Incorrect'
-  // console.log(isCorrect, 'is correct')
   const background = isCorrect ? '#89e219ff' : '#ff4b4bff'
-  // console.log(background)
   const handlerIndex = () => {
     if (isCorrect) {
       score.value++

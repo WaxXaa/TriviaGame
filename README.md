@@ -9,4 +9,3 @@ This is a mobile trivia game and it is made to have a good time with friends and
 This game is made possible by the Open Trivia API
 
 https://opentdb.com/api_config.php
-

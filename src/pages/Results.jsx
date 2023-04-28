@@ -4,14 +4,26 @@ import { Box } from '@mui/material'
 import Styles from './Results.module.css'
 import { useNavigate } from 'react-router-dom'
 import { score } from '../components/CheckRes/CheckRes'
+import completed from '../assets/completed.wav'
+import notCompleted from '../assets/notCompleted.mp3'
 // eslint-disable-next-line no-undef
-const completed = new Audio('../assets/completed.wav')
+const completedS = new Audio(completed)
+// eslint-disable-next-line no-undef
+const notCpletedS = new Audio(notCompleted)
 export function Results () {
   console.log(score.value)
   const navigate = useNavigate()
   const goHome = () => {
     score.value = 0
     navigate('/')
+  }
+  console.log()
+  function sound () {
+    if (score <= 4) {
+      notCpletedS.play()
+    } else {
+      completedS.play()
+    }
   }
   let bcolor = 'var(---green)'
   if (score <= 7) {
@@ -51,8 +63,9 @@ export function Results () {
                 bottom: 5
               }
               } onClick={goHome} ><Title text={'Finish'} color={'var(---white)'}/></Box>
-              {completed.play()}
           </div>
+          {sound()}
         </>
+
   )
 }
