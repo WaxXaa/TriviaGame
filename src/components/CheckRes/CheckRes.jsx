@@ -1,6 +1,6 @@
 /* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
-import correct from '../../assets/correct.wav'
+import correct from '../../assets/correct.mp3'
 import wrong from '../../assets/wrong.mp3'
 
 import Styles from './CheckRes.module.css'
