@@ -19,8 +19,8 @@ export function Results () {
   }
   console.log()
   function sound () {
-    completedS.currentTime(0)
-    notCpletedS.currentTime(0)
+    completedS.load()
+    notCpletedS.load()
     if (score <= 4) {
       notCpletedS.play()
     } else {

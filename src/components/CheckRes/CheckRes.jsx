@@ -26,8 +26,8 @@ export function CheckRes (
 ) {
   const isCorrect = isChoise === correctAns
   function sound () {
-    correct.currentTime(0)
-    wrong.currentTime(0)
+    correct.load()
+    wrong.load()
     console.log('sound')
     if (isCorrect) { correctS.play() } else {
       wrongS.play()
