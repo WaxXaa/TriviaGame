@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import { NavMenu } from '../components/Nav/NavMenu'
 import { Link } from 'react-router-dom'
-import Styles from './ListCateGories.module.css'
+import Styles from './ListCategories.module.css'
 import { categories } from '../assets/categories'
 import { Box } from '../components/Box/Box'
 import { Title } from '../components/Title/Title'
